@@ -19,7 +19,8 @@ export default defineConfig({
     alias: {
       '@image': path.resolve(__dirname, 'src/assets/image'),
       '@component' : path.resolve(__dirname, 'src/components'),
-      '@api' : path.resolve(__dirname, 'src/api')
+      '@api' : path.resolve(__dirname, 'src/api'),
+      '@store' : path.resolve(__dirname, 'src/stores')
     }
   },
   server: {
