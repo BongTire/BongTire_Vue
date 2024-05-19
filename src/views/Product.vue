@@ -110,7 +110,6 @@
       <!-- Product grid -->
       <div class="mt-6 lg:col-span-2 lg:mt-0 xl:col-span-3">
         <ProductCard :conf="wheelProduct" />
-
       </div>
     </div>
   </main>

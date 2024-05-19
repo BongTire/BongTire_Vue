@@ -46,7 +46,7 @@
           </transition>
         </Popover>
 
-        <a href="/notification?pccd=P0401" class="text-sm font-semibold leading-6 text-gray-900">이벤트</a>
+        <a href="/board?pccd=P0402" class="text-sm font-semibold leading-6 text-gray-900">이벤트</a>
         <a href="/reservation" class="text-sm font-semibold leading-6 text-gray-900">예약</a>
 
         <Popover class="relative">
@@ -63,7 +63,7 @@
         </Popover>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a href="/login" class="text-sm font-semibold leading-6 text-gray-900">로그인 <span aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
     <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -92,7 +92,7 @@
                 </DisclosurePanel>
               </Disclosure>
 
-              <a href="/notification?pccd=P0401" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">이벤트</a>
+              <a href="/board?pccd=P0402" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">이벤트</a>
               <a href="/reservation" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">예약</a>
 
               <Disclosure as="div" class="-mx-3" v-slot="{ open }">
@@ -171,7 +171,7 @@
 
   const products = [
     { name: '타이어', description: '다양한 종류의 타이어', href: '/tire', icon: ShoppingCartIcon },
-    { name: '휠', description: '다양한 종류의 저렴한 가격', href: '#', icon: ShoppingCartIcon },
+    { name: '휠', description: '다양한 종류의 저렴한 가격', href: '/wheel', icon: ShoppingCartIcon },
   ]
   const callsToAction = [
     { name: '타이어 검색', href: '#', icon: MagnifyingGlassIcon },
@@ -179,8 +179,8 @@
   ]
   const company = [
     { name: '가게 소개', href: '#' },
-    { name: '공지사항', href: '#' },
-    { name: '문의사항', href: '#' },
+    { name: '공지사항', href: '/board?pccd=P0401' },
+    { name: '문의사항', href: '/board?pccd=C0501' },
   ]
 
 const mobileMenuOpen = ref(false)

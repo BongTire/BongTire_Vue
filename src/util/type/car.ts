@@ -3,24 +3,16 @@ import { IBrand } from "./brand"
 export interface ICar{
     CarId: number
     BrandId: number
-    drivingMethodPCCD: string[]
-    PCCD: string[]
+    drivingMethodPCCD: string[] | null
+    PCCD: string[] | null
     name: string | null
     codeName: string | null
-    powerTrain: string[]
-    displacement: string[]
+    powerTrain: string[] | null
+    displacement: string[] | null
     image: string | null
     year: number
 }
 
-export interface ICarList{
-    BrandId: number
-    name: string
-    brandLogo: string | null
-    origin: number
-    nation: string | null
-    carList: ICar[]
-}
 
 export interface ICarTrim{
     CarTrimId: number | null

@@ -1,3 +1,5 @@
+import { IBrand } from "./brand";
+
 export interface IProduct {
     id?: number | null
     WheelId?: number | null
@@ -48,3 +50,12 @@ export interface IProduct {
 
 // ?: 옵션은 undefined를 가려내는 옵션임
 // 해당 옵션이 붙는다는 뜻은 있으면, 보내고 없으면 말아라 라는 뜻
+
+export interface IProductType{
+    PCCDid : number
+    PCCD: string
+    title: string | null
+    icon: string | null
+    brand?: IBrand[] | null
+
+}

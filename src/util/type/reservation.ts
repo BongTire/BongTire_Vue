@@ -55,12 +55,14 @@ export interface IReservationMaster{
     isComplete: number
     name: string
     number: string
+    time:number
     product: IReservationProduct[]
 }
 
 export interface IReservationProduct{
-    PCCD: string
+    ReservationProductId: number
     ProductId: number | null
+    PCCD: string
     amount: number
     price: number
     tireLocation: number[]

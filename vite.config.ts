@@ -18,7 +18,11 @@ export default defineConfig({
   resolve: {
     alias: {
       '@image': path.resolve(__dirname, 'src/assets/image'),
-      '@component' : path.resolve(__dirname, 'src/components')
+      '@component' : path.resolve(__dirname, 'src/components'),
+      '@api' : path.resolve(__dirname, 'src/api')
     }
+  },
+  server: {
+    port: 3000
   }
 })

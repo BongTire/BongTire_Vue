@@ -13,9 +13,11 @@
 </template>
 
 <script lang="ts" setup>
+import { getTest } from '@api/test.js';
 import IntroService from '@component/Main/IntroService.vue';
 import IntroProduct from '@component/Main/IntroProduct.vue';
 import favWiget from '@component/Main/FavWiget.vue';
+
 const favWigetData = [
     {
         id: 1,
@@ -60,6 +62,10 @@ const favWigetData = [
         icon: `/src/assets/image/systemIcon/Car/car-repair-icon.png`
     },
 ]
+
+
+
+
 
 
 

@@ -10,6 +10,8 @@ export interface IPost{
     isPin: number
     isActive: number
     isAnswer: number
+    isThumbnail: number
+    thumbnail: string | null
     answer: string | null
     viewers: number | null
     isSecret: number
